@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Rug Busters | Dexscreener Token Analyzer",
+    "version": "1.0",
+    "description": "Automatically analyze a token listed in Dexscreener by Rug Busters | rubu.best",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "host_permissions": [
+      "https://*.dexscreener.com/"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';",
+      "web_accessible_resources": [
+        "popup.js"
+      ]
+    }
+  }
+  

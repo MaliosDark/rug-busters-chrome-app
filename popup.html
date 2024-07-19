@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rug Busters | Dexscreener Token Analyzer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      width: 200px;
+      height: 250px;
+      font-family: 'Roboto', sans-serif;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro y transparente */
+      color: #ddd;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px; /* Bordes redondeados */
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .analyze-btn {
+      width: 80px;
+      height: 80px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      margin: auto;
+      display: block;
+    }
+    .analyze-btn img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+    }
+    .analyze-btn:hover img {
+      transform: scale(1.1);
+    }
+    .analyze-btn span {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.8em;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .analyze-btn:hover span {
+      background-color: #45a049;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .floating-img {
+      position: absolute;
+      width: 50px;
+      animation: float 5s infinite;
+    }
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(50px, 50px); }
+      50% { transform: translate(-50px, 50px); }
+      75% { transform: translate(50px, -50px); }
+      100% { transform: translate(0, 0); }
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 0.8em;
+      transition: color 0.3s;
+    }
+    .footer a:hover {
+      color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <img src="zLpaS9cu-UL7yLa5VgLLX.png" alt="Floating Image" class="floating-img">
+  <div class="container">
+    <button class="analyze-btn" id="analyze">
+      <img src="icon.png" alt="Dexscreener Icon">
+      <span>Analyze Token</span>
+    </button>
+    <br>
+    <h2>Rug Busters | Dexscreener Token Analyzer</h2>
+    <div class="footer">
+        <a href="https://rubu.best/help" target="_blank">Help</a>
+        <a href="https://rubu.best/#about" target="_blank">About</a>
+        <a href="https://rubu.best" target="_blank">$RUBU</a>
+        <a href="#">v1.0</a>
+    </div>      
+  </div>
+  <!-- Scripts externos -->
+  <script src="popup.js"></script>
+  <!-- Fin Scripts externos -->
+</body>
+</html>
